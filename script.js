@@ -65,7 +65,16 @@ form.addEventListener('submit', (e) => {
 
 
 //Navigation
-// Get elements
+/*** Get elements
+const menuToggle = document.getElementById('mobile-menu');
+const nav = document.querySelector('.nav');
+
+// Toggle menu on click
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+***/
+
 const menuToggle = document.getElementById('mobile-menu');
 const nav = document.querySelector('.nav');
 
@@ -74,5 +83,19 @@ menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
+// Close the menu when clicking on a link
+nav.addEventListener('click', (event) => {
+    if (event.target.tagName === 'A') {
+        nav.classList.remove('active');
+    }
+});
+
+// Close the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+    // Check if the click is outside the menu and the toggle button
+    if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+        nav.classList.remove('active');
+    }
+});
 
 
