@@ -1,0 +1,234 @@
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1, .bo {
+    font-family: 'Playfair Display', serif; 
+    font-size: 4em; 
+    color: #1e3474; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin: 20px 0; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    border-bottom: 2px solid #FFD700; 
+    padding-bottom: 10px; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+.question p {
+    margin-bottom: 10px;
+    color: darkslategray;
+    font-size: large;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*******************************************
+-------------------------------------------
+|                                          |
+|                                          |
+|       Written By                         |
+|           Thy Nobles                     |
+|               Founder                    |
+|                   Cybertron Technologies |
+|    22nd Oct, 2024                        |
+|        To   25th Oct. 2024               |
+|                                          |
+|                                          |
+|                                          |
+-------------------------------------------
+*******************************************/
+
+input[type="radio"] {
+    margin-right: 10px;
+    padding: 20px;
+}
+
+#submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+
+.footer {
+    width: 100%; /* Full width */
+    background-color: #24292e; /* Dark background */
+    color: #944a4a; /* White text */
+    padding: 40px 0; /* Increased padding for a more spacious look */
+    text-align: center; /* Centered text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Centered content */
+    padding: 0 20px; /* Padding for sides */
+}
+
+.footer-links {
+    margin-bottom: 15px; /* Space between sections */
+}
+
+.footer-link {
+    color: #5c0a0a;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #f9826c; /* Highlight color on hover */
+}
+
+.footer-social {
+    margin-bottom: 15px; /* Space between sections */
+}
+
+.footer-social-link {
+    color: #df3737;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-social-link:hover {
+    color: #f9826c; /* Highlight color on hover */
+}
+
+.footer-rights {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/**Navigation*/
+
+.header {
+    width: 100%; 
+    background-color: #24292e;
+    color: #ffffff; 
+    padding: 15px 20px; 
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 30%;
+    height: auto;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex; /* Flexbox for the nav */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Flexbox for nav items */
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f9826c; /* Highlight linked color on hover */
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack the lines */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 3px 0; /* Space between bars */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hide main nav by default */
+        width: 100%; /* Full width when shown */
+    }
+
+    .nav.active {
+        display: flex; /* Show on mobile toggle */
+        flex-direction: column; /* Stack vertically */
+        position: absolute; /* Overlay on the header */
+        top: 60px; /* Position below header */
+        left: 0;
+        background-color: #24292e; /* Match header background */
+        z-index: 1; /* Layering */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show mobile menu toggle */
+    }
+
+    .nav-link {
+        padding: 15px;
+        margin: 0; /* No side margin for mobile */
+    }
+}
+
+
