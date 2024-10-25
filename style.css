@@ -176,7 +176,7 @@ input[type="radio"] {
 
 .nav.active {
     display: block;
-
+}
 .nav-links {
     list-style: none; /* Remove bullets */
     display: flex; /* Flexbox for nav items */
