@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thy Nobles' Trial</title>
-     <meta property="og:title" content="Thy Nobles' Trial" />
+    <meta property="og:title" content="Thy Nobles' Trial" />
     <meta property="og:description" content="Thy Nobles' Trial is web application that offers users a fun and engaging way to discover more about their personality traits through a series of carefully crafted questions. The results provide insights into various personality characteristics, helping users understand themselves and others better." />
     <meta property="og:image" content="https://aondonakato.github.io/NoblesTrial/oglord.jpg" />
     <meta property="og:url" content="https://aondonakato.github.io/NoblesTrial/" />
@@ -16,63 +16,13 @@
     <meta name="apple-mobile-web-app-title" content="Thy Nobles' Trial" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-        <style>
 
 
-                 .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-        .hero-section {
-            background-color: #f8f9fa;
-            padding: 40px 0;
-            text-align: center;
-        }
-            
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-            </style>
     </head>
 <body>
 
 
-<!--    <header class="header">
+    <header class="header">
         <div class="header-content">
             <div class="logo">
                 <a href="index.html" class="logo-link"><img class="logo" src="logo1.jpg" alt="Thy Nobles"></a>
@@ -90,39 +40,8 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </div> 
-    </header> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler, logo" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">            
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
-            </li>
-          <!--  <li class="nav-item">
-                <a class="nav-link" href="cart.php">Cart <span class="badge badge-pill badge-primary" id="cart-count">0</span></a>
-            </li> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="hero-section">
-    <h1>Thy Nobles' Trial</h1>
-    <p>Thy Nobles' Trial is a web app that reveals personality traits through engaging questions, helping users understand themselves and others. </p>
-</div>
-
+        </div>
+    </header>
 
 
     <div class="container">
@@ -169,6 +88,18 @@
             <button id="download-btn" style="display: none;">Download Result</button>
         </form>
         <div id="result"></div>
+
+        <div id="share-buttons" style="display: none;">
+            <h3>Share Your Result:</h3>
+            <a id="facebook-share" href="#" target="_blank">Share on Facebook</a>
+            <a id="twitter-share" href="#" target="_blank">Share on Twitter</a>
+            <a id="whatsapp-share" href="#" target="_blank">Share on WhatsApp</a>
+        </div>
+        <div>
+        <canvas id="resultCanvas" style="display:none;"></canvas>
+        <button id="generate-image-btn" style="display:none;">Generate Image</button>
+        </div>
+    
     </div> 
 
 
@@ -199,16 +130,18 @@
                 <a href="#" class="footer-link">Contact</a>
             </div>
             <div class="footer-social">
-                <a href="https://x.com/Thy_Nobles" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://facebook.com/Thy.Nobles" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://linkedin.com/in/aondona-kato" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://x.com/Thy_Nobles" target="_blank" class="footer-social-link"><b>X</b><i>( formerly Twitter)</i></a>
+                <a href="https://facebook.com/Thy.Nobles" target="_blank" class="footer-social-link">Facebook</a>
+                <a href="https://linkedin.com/in/aondoba-kato" target="_blank" class="footer-social-link">LinkedIn</a>
+                <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="footer-social-link">YouTube</a>
             </div>
             <div class="footer-rights">
                 <p>© 2024 Thy Nobles. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+
 
 </body>
 </html>
