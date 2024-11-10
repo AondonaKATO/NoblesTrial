@@ -16,7 +16,48 @@
     <meta name="apple-mobile-web-app-title" content="Thy Nobles' Trial" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Custom CSS for responsive icon sizes */
+        .footer-social {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #000;
+        }
+
+        .footer-social i {
+            transition: transform 0.2s ease;
+        }
+
+        /* Default size for large screens */
+        .footer-social a {
+            font-size: 30px;
+        }
+
+        /* Medium screens (tablets) */
+        @media (max-width: 768px) {
+            .footer-social a {
+                font-size: 25px;
+            }
+        }
+
+        /* Small screens (mobile) */
+        @media (max-width: 480px) {
+            .footer-social a {
+                font-size: 20px;
+            }
+        }
+
+        .footer-social a:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
 
@@ -52,7 +93,7 @@
     <form id="personality-form">
         Instruction: Ensure you answer all questions
 
-        <!--Question One-->
+        <!-- Question One -->
         <div class="question">
             <p>Question 1: You prefer to:</p>
             <input type="radio" id="q1_a" name="q1" value="A">
@@ -61,7 +102,7 @@
             <label for="q1_b"> Be alone with your own ideas, emotions, and impressions.</label>
         </div>
 
-        <!--Question Two-->
+        <!-- Question Two -->
         <div class="question">
             <p>Question 2: You notice:</p>
             <input type="radio" id="q2_a" name="q2" value="A">
@@ -70,7 +111,7 @@
             <label for="q2_b"> What maybe, you are good at imagining things.</label>
         </div>
 
-        <!--Question Three-->
+        <!-- Question Three -->
         <div class="question">
             <p>Question 3: You decide things:</p>
             <input type="radio" id="q3_a" name="q3" value="A">
@@ -79,7 +120,7 @@
             <label for="q3_b"> In your own passionate way.</label>
         </div>
 
-        <!--Question Four-->
+        <!-- Question Four -->
         <div class="question">
             <p>Question 4: You live:</p>
             <input type="radio" id="q4_a" name="q4" value="A">
@@ -115,10 +156,10 @@
             <a href="#" class="footer-link">Contact</a>
         </div>
         <div class="footer-social">
-            <a href="https://x.com/Thy_Nobles" target="_blank" class="footer-social-link"><b>X</b><i>(formerly Twitter)</i></a>
-            <a href="https://facebook.com/Thy.Nobles" target="_blank" class="footer-social-link">Facebook</a>
-            <a href="https://linkedin.com/in/aondoba-kato" target="_blank" class="footer-social-link">LinkedIn</a>
-            <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="footer-social-link">YouTube</a>
+            <a href="https://x.com/Thy_Nobles" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://facebook.com/Thy.Nobles" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://linkedin.com/in/aondoba-kato" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="fa fa-youtube"></a>
         </div>
         <div class="footer-rights">
             <p>© 2024 Thy Nobles. All rights reserved.</p>
