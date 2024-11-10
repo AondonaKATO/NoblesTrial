@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
-    <html lang="en-NG">
+<html lang="en-NG">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thy Nobles' Trial</title>
     <meta property="og:title" content="Thy Nobles' Trial" />
-    <meta property="og:description" content="Thy Nobles' Trial is web application that offers users a fun and engaging way to discover more about their personality traits through a series of carefully crafted questions. The results provide insights into various personality characteristics, helping users understand themselves and others better." />
+    <meta property="og:description" content="Thy Nobles' Trial is a web application that offers users a fun and engaging way to discover more about their personality traits through a series of carefully crafted questions." />
     <meta property="og:image" content="https://aondonakato.github.io/NoblesTrial/oglord.jpg" />
     <meta property="og:url" content="https://aondonakato.github.io/NoblesTrial/" />
     <meta property="og:type" content="website" />
@@ -15,133 +15,120 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Thy Nobles' Trial" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="style.css">
-
-
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
 <body>
 
-
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <a href="index.html" class="logo-link"><img class="logo" src="logo1.jpg" alt="Thy Nobles"></a>
-            </div>
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#" class="nav-link">Features</a></li>
-                    <li><a href="#" class="nav-link">Pricing</a></li>
-                    <li><a href="#" class="nav-link">Services</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="logo1.jpg" alt="Thy Nobles">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
+</header>
 
+<div class="container">
+    <h1>Thy Nobles' Trial</h1>
+    <form id="personality-form">
+        Instruction: Ensure you answer all questions
 
-    <div class="container">
-        <h1>Thy Nobles' Trial</h1>
-        <form id="personality-form">
-            Instruction: Ensure you answer all questions
-
-            <!--Question One-->
-            <div class="question">
-                <p>Question 1: You prefer to:</p>
-                <input type="radio" id="q1_a" name="q1" value="A">
-                <label for="q1_a"> Have People, activities, and things around you.</label>
-                <input type="radio" id="q1_b" name="q1" value="B">
-                <label for="q1_b"> Be alone with you own ideas, emotions, and impressions.</label>
-            </div>
-
-            <!--Question Two-->
-            <div class="question">
-                <p>Question 2: You notice:</p>
-                <input type="radio" id="q2_a" name="q2" value="A">
-                <label for="q2_a"> What is real, you look at the practical things around you.</label>
-                <input type="radio" id="q2_b" name="q2" value="B">
-                <label for="q2_b"> What maybe, you are good at imagining things.</label>
-            </div>
-
-            <!--Question Three-->
-            <div class="question">
-                <p>Question 3: You decide things</p>
-                <input type="radio" id="q3_a" name="q3" value="A">
-                <label for="q3_a"> In a logical and well organised way.</label>
-                <input type="radio" id="q3_b" name="q3" value="B">
-                <label for="q3_b"> In your own passionate way.</label>
-            </div>
-
-            <!--Question Four-->
-            <div class="question">
-                <p>Question 4: You live:</p>
-                <input type="radio" id="q4_a" name="q4" value="A">
-                <label for="q4_a"> A planned and organized life.</label>
-                <input type="radio" id="q4_b" name="q4" value="B">
-                <label for="q4_b"> A flexible life and decide what you do as you go along.</label>
-            </div><div class="bo"></div><br>
-            <button id="submit-btn">Get Your Result</button> 
-            <button id="download-btn" style="display: none;">Download Result</button>
-        </form>
-        <div id="result"></div>
-
-        <div id="share-buttons" style="display: none;">
-            <h3>Share Your Result:</h3>
-            <a id="facebook-share" href="#" target="_blank">Share on Facebook</a>
-            <a id="twitter-share" href="#" target="_blank">Share on Twitter</a>
-            <a id="whatsapp-share" href="#" target="_blank">Share on WhatsApp</a>
+        <!--Question One-->
+        <div class="question">
+            <p>Question 1: You prefer to:</p>
+            <input type="radio" id="q1_a" name="q1" value="A">
+            <label for="q1_a"> Have People, activities, and things around you.</label>
+            <input type="radio" id="q1_b" name="q1" value="B">
+            <label for="q1_b"> Be alone with your own ideas, emotions, and impressions.</label>
         </div>
-        <div>
+
+        <!--Question Two-->
+        <div class="question">
+            <p>Question 2: You notice:</p>
+            <input type="radio" id="q2_a" name="q2" value="A">
+            <label for="q2_a"> What is real, you look at the practical things around you.</label>
+            <input type="radio" id="q2_b" name="q2" value="B">
+            <label for="q2_b"> What maybe, you are good at imagining things.</label>
+        </div>
+
+        <!--Question Three-->
+        <div class="question">
+            <p>Question 3: You decide things:</p>
+            <input type="radio" id="q3_a" name="q3" value="A">
+            <label for="q3_a"> In a logical and well-organized way.</label>
+            <input type="radio" id="q3_b" name="q3" value="B">
+            <label for="q3_b"> In your own passionate way.</label>
+        </div>
+
+        <!--Question Four-->
+        <div class="question">
+            <p>Question 4: You live:</p>
+            <input type="radio" id="q4_a" name="q4" value="A">
+            <label for="q4_a"> A planned and organized life.</label>
+            <input type="radio" id="q4_b" name="q4" value="B">
+            <label for="q4_b"> A flexible life and decide what you do as you go along.</label>
+        </div>
+        <br>
+        <button id="submit-btn">Get Your Result</button>
+        <button id="download-btn" style="display: none;">Download Result</button>
+    </form>
+    <div id="result"></div>
+
+    <div id="share-buttons" style="display: none;">
+        <h3>Share Your Result:</h3>
+        <a id="facebook-share" href="#" target="_blank">Share on Facebook</a>
+        <a id="twitter-share" href="#" target="_blank">Share on Twitter</a>
+        <a id="whatsapp-share" href="#" target="_blank">Share on WhatsApp</a>
+    </div>
+    <div>
         <canvas id="resultCanvas" style="display:none;"></canvas>
         <button id="generate-image-btn" style="display:none;">Generate Image</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Team</a>
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Contact</a>
         </div>
-    
-    </div> 
-
-
-    
-<!--
--------------------------------------------
-|                                          |
-|                                          |
-|       Written By                         |
-|           Thy Nobles                     |
-|               Founder                    |
-|                   Cybertron Technologies |
-|    22nd Oct, 2024                        |
-|        To   25th Oct. 2024               |
-|                                          |
-|                                          |
-|                                          |
--------------------------------------------
--->
-
-    <script src="script.js"></script>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <a href="#" class="footer-link">About</a>
-                <a href="#" class="footer-link">Team</a>
-                <a href="#" class="footer-link">Blog</a>
-                <a href="#" class="footer-link">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://x.com/Thy_Nobles" target="_blank" class="footer-social-link"><b>X</b><i>( formerly Twitter)</i></a>
-                <a href="https://facebook.com/Thy.Nobles" target="_blank" class="footer-social-link">Facebook</a>
-                <a href="https://linkedin.com/in/aondoba-kato" target="_blank" class="footer-social-link">LinkedIn</a>
-                <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="footer-social-link">YouTube</a>
-            </div>
-            <div class="footer-rights">
-                <p>© 2024 Thy Nobles. All rights reserved.</p>
-            </div>
+        <div class="footer-social">
+            <a href="https://x.com/Thy_Nobles" target="_blank" class="footer-social-link"><b>X</b><i>(formerly Twitter)</i></a>
+            <a href="https://facebook.com/Thy.Nobles" target="_blank" class="footer-social-link">Facebook</a>
+            <a href="https://linkedin.com/in/aondoba-kato" target="_blank" class="footer-social-link">LinkedIn</a>
+            <a href="https://youtube.com/@Thy.Nobles" target="_blank" class="footer-social-link">YouTube</a>
         </div>
-    </footer>
+        <div class="footer-rights">
+            <p>© 2024 Thy Nobles. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
