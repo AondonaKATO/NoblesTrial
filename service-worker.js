@@ -4,6 +4,9 @@ const CACHE_ASSETS = [
   './index.html',   // Cache HTML
   './style.css',    // Cache CSS
   './script.js',    // Cache JS
+  './logo1.jpg',
+  './1.png',
+  './2.png',
 ];
 
 // Install Service Worker and cache assets
